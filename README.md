@@ -1,2 +1,9 @@
 # test
-just a test project
+this is just a test project！
+
+contents：
+spring mvc
+mybatis
+dubbo
+xml
+cucumber

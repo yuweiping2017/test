@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.howtodoinjava.dao.YuserDao">
+ <!--配置一个resultMap 指定返回的类型 -->
+<!--     <resultMap id="yuserVOList" type="YuserVO"> -->
+<!--         <id column="user_emial" property="user_emial" /> -->
+<!--         <result column="user_Name" property="user_Name" /> -->
+<!--         <result column="user_Password" property="user_Password" /> -->
+<!--     </resultMap> -->
+ 
+    <select id="selectUserByName" parameterType="String" resultType="YuserVO">
+        select * from `y_user` where user_Name = #{user_name}
+    </select>
+   <select id="selectAllUserBy" parameterType="String" resultType="YuserVO">
+        select * from y_user where user_Name like #{name}
+    </select>
+    <insert id="addUser" parameterType="YuserVO" >
+        insert into y_user (user_Name,user_Password,user_emial) 
+             values(#{user_Name},#{user_Password},#{user_emial}) 
+    </insert>
+    
+   
+</mapper>
+	

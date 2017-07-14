@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.howtodoinjava.dao.UserDao">
+ <!--配置一个resultMap 指定返回的类型 -->
+<!--     <resultMap id="userVOList" type="UserVO"> -->
+<!--         <id column="user_emial" property="user_emial" /> -->
+<!--         <result column="user_Name" property="user_Name" /> -->
+<!--         <result column="user_Password" property="user_Password" /> -->
+<!--     </resultMap> -->
+ 
+     <select id="getAllUsers"  resultType="UserVO">
+        select * from y_user
+    </select>
+   
+   
+</mapper>
+	

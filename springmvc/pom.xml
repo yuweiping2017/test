@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
    <properties>  
         <!-- spring版本号 -->  
-        <spring.version>4.1.4.RELEASE</spring.version>
+        <spring.version>4.3.17</spring.version>
         <slf4j.api.version>1.7.5</slf4j.api.version>    
     </properties>  
   <dependencies>
